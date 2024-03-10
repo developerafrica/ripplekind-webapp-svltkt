@@ -1,0 +1,25 @@
+/* Write your global styles here, in SCSS syntax. Variables and mixins from the src/variables.scss file are available here without importing */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    padding: 0;
+    list-style: none;
+}
+.ripple-text{
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 500;
+}
+button{
+    background: none;
+    border: none;
+}

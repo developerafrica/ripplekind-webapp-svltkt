@@ -1,0 +1,26 @@
+/* Variables and mixins declared here will be available in all other SCSS files */
+:root{
+    --text : #433f3f;
+    --blue : #2956ec;
+    --white : white;
+    --black :  black;    
+    --black-tr  : rgba(0, 0, 0, 0.6);
+}
+
+@mixin text($c, $s, $w){
+    color: $c;
+    font-size: $s;
+    font-weight: $w;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+@mixin flex(){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin fixed($z){
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: $z;
+}
