@@ -10,7 +10,7 @@
         <div class="items_progress">
             <header>
                 <span>
-                    <h2>{data.total_cost}</h2>
+                    <h2>{data.total_cost} target amount</h2>
                 </span><span>
                     <h2>{data.cost_percentage} %</h2>
                 </span>
@@ -18,14 +18,13 @@
             <main>
                 <p>{data.money_raised} MKW raised</p>
             </main>
-            <footer>
-                <progress max="100" value="64"></progress>
-            </footer>
+            <progress max="100" value="64"></progress>
+           
         </div>
         <div class="monetary_progress">
             <header>
                 <span>
-                    <h2>{data.total_items}</h2>
+                    <h2>{data.total_items} target items</h2>
                 </span><span>
                     <h2>{data.items_percentage} %</h2>
                 </span>
@@ -33,36 +32,36 @@
             <main>
                 <p>{data.items_raised} items donated</p>
             </main>
-            <footer>
-                <progress max="100" value="40"></progress>
-            </footer>
+            <progress max="100" value="40"></progress>
+            
             
         </div>
     </div>  
 </article> 
 <style lang="scss">
+ 
 
     article{
         .details{
-            padding: 10px 0;
+            padding:5px 0 0 0;
             div{
+
                 h2, p{
-                    @include text(var(--text), 0.75rem, 450);
-                    padding: 5px;
+                    @include text(var(--text), 0.7rem, 450);
+                    padding: 1px 5px;
                 }
                 header{
                     @include flex;
                 }
-                footer{
-                    progress{
-                        width: 100%;
-                        block-size: 0.5em;
-                        height: 2px;
-                    }
-                    progress[value]{
-                        background-color: green;
-                    }
+                                            
+                progress{
+                    width: 100%;
+                    height: 2px;                    
                 }
+                progress[value]{
+                    background-color: green;
+                }
+                
             }
         }
         

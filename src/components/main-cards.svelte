@@ -74,13 +74,13 @@
     </footer>
 </a>
 {/each}
-<style lang="scss">
+<style lang="scss">   
     .cards{
         background: var(--white);
         box-shadow: rgba(0, 0, 0, 0.2) 0 4px 4px 3px;
         border-radius: 4px;
         margin: 20px 10px;
-        padding: 5px 10px;
+        padding: 3px 10px;
         display: block;
         max-width: 355px;
         header{
@@ -90,27 +90,26 @@
                     @include flex;
                     gap: 10px;
                     .profile_picture{
-                        width: 45px;
+                        width: 35px;
                         img{
                             width: 100%;
                             border-radius: 100%;
                         }
                     }
                     .profile_name{
-                        @include text(var(--text), 0.75rem, 450);
+                        @include text(var(--text), var(--rem1), 450);
                     }
                 }
                 .date{
-                    @include text(var(--black-tr), 0.8rem, 650);
+                    @include text(var(--black-tr), var(--rem1), 450);
                 }
             }
             .catergory{
                 text-align: end;
                 a{
                     display: inline-block;
-                    border-radius: 4rem;
-                    padding: 5px;
-                    @include text(var(--text), 0.7rem, 750);
+                    padding: 0 0 5px 0;
+                    @include text(var(--text), var(--rem1), 750);
                     color: #ffa500;
                 }
             }
@@ -124,24 +123,23 @@
                 }
                 .description{
                     p{
-                        @include text(var(--text), 0.8rem, 500);
+                        @include text(var(--text),var(--rem2), 500);
                         color: var(--black-tr);
                     }
                 }
             }
             .needs_list{
                 border: var(--black) solid 0.9px;
-                padding: 10px;
+                padding: 5px 10px;
                 div{
                     ul{
                         li{
-                            @include text(var(--text), 0.8rem, 500);
+                            @include text(var(--text), var(--rem2), 500);
                             @include flex;
-                            padding: 3px;
-                            margin: 3px;
+                            padding: 1.5px 3px;
+                            margin: 2px 3px;
                             span:nth-child(2){
-                                @include text(var(--blue), 0.7rem, 760);
-                                letter-spacing: 1.1px;
+                                @include text(var(--blue), var(--rem1), 500);
                             }
                         }
                     }
@@ -154,7 +152,7 @@
                 gap: 10px;
                 margin: 10px 0;
                 span{
-                    @include text(var(--text), 0.8rem, 500);
+                    @include text(var(--text), var(--rem2), 500);
                     text-align: center;
                     border-radius: 4px;
                     a{

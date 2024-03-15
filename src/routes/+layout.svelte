@@ -87,7 +87,7 @@
 
 <style lang="scss">
     :global(body){
-        background: var(--white);
+        background: var(--background);
     }
     .clip{
         pointer-events: all !important;
@@ -99,13 +99,13 @@
         @include fixed(8);
         top: 0;
         nav{
-            background: var(--white);
+            background: var(--background);
             @include flex;
             h1{
                 padding: 10px;
                 a{
                     color: var(--text);
-                    @include text(var(--text), 0.8rem, 450);
+                    @include text(var(--text), 0.7rem, 450);
                 }
             }
             .settings_button{
@@ -120,7 +120,7 @@
         bottom: 0;
         nav{
             background: var(--white);
-            margin: 5px;
+            margin: 15px 5px ;
             border: black solid 1px;
             ul{
                 @include flex;

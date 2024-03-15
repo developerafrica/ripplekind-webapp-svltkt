@@ -127,12 +127,14 @@
                     .profile_info{
                         padding: 10px;
                         h1{
-                            @include text(var(--text), 0.94rem, 700);
+                            @include text(var(--text), var(--rem2), 700);
                             text-transform: uppercase;
                         }
                         p{
-                            @include text(var(--text), 0.8rem, 500);
-                            padding: 5px;
+                            padding: 1.5px;
+                            a{
+                                @include text(var(--gray), var(--rem1), 500);
+                            }
                         }
                     }
                     .profile_actions{
@@ -143,7 +145,7 @@
                             border-radius: 4px;
                             border: var(--black) solid 1px;
                             padding: 10px 15px;
-                            @include text(var(--text), 0.8rem, 500);
+                            @include text(var(--text), var(--rem2), 500);
                         }
                         button:nth-child(2){
                             background-color: var(--black);
@@ -155,23 +157,23 @@
                             border-radius: 4px;
                             border: var(--black) solid 1px;
                             padding: 10px 50px;
-                            @include text(var(--white), 0.8rem, 500);
+                            @include text(var(--white), var(--rem2), 500);
                         }
                     }
                 }
                 .needs_details{
                     padding:10px;
                     h1{
-                        @include text(var(--text), 0.75rem, 700);
+                        @include text(var(--text), var(--rem1), 700);
                         text-transform: uppercase;
                         padding: 3px 0;
                         letter-spacing: 1.1px;
                     }
                     ul{
                         li{
-                            border: var(--black) 1px solid;
+                            border: var(--gray) 0.9px solid;
                             border-radius: 4px;
-                            margin: 5px 0;
+                            margin:8px 0;
                             table{
                                 width: 100%;
                                 tr{
@@ -187,11 +189,11 @@
                             }
                            
                             h2{
-                                @include text(var(--text), 1rem , 600);
+                                @include text(var(--text),var(--rem2), 600);
 
                             }
                             p{
-                                @include text(var(--text), 0.9rem , 800);
+                                @include text(var(--text), var(--rem2) , 800);
                                 text-align: end !important;
                                 // padding: 0;
 
@@ -200,7 +202,7 @@
                                 background-color: var(--blue);
                                 border-radius: 4px;
                                 padding: 7px 15px;
-                                @include text(var(--white), 0.9rem , 600);
+                                @include text(var(--white),var(--rem2), 600);
                             }
                         }
                     }
@@ -208,18 +210,18 @@
                 .donations_details{
                     padding:10px;
                     h1{
-                        @include text(var(--text), 0.75rem, 700);
+                        @include text(var(--text), var(--rem1), 700);
                         text-transform: uppercase;
                         padding: 3px 0;
                         letter-spacing: 1.1px;
                     }
                     ul{
+                        margin: 10px 0;
                         li{
                             padding: 10px 5px;
                             background: var(--white);
-                            box-shadow: rgba(0, 0, 0, 0.3) 0 4px 4px 0;
                             a{
-                                @include text(var(--text), 0.8rem, 500);
+                                @include text(var(--text), var(--rem2), 500);
                                 display: block;
                                 @include flex;
                                 align-items:flex-start;
