@@ -47,7 +47,7 @@
             div{
 
                 h2, p{
-                    @include text(var(--text), 0.7rem, 450);
+                    @include text(var(--text), 10px, 450);
                     padding: 1px 5px;
                 }
                 header{

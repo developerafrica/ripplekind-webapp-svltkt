@@ -105,7 +105,7 @@
                 padding: 10px;
                 a{
                     color: var(--text);
-                    @include text(var(--text), 0.7rem, 450);
+                    @include text(var(--text), var(--rem0), 450);
                 }
             }
             .settings_button{

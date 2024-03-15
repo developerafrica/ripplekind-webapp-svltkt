@@ -97,7 +97,9 @@
                         }
                     }
                     .profile_name{
-                        @include text(var(--text), var(--rem1), 450);
+                        h1{
+                            @include text(var(--text), var(--rem2), 450);
+                        }
                     }
                 }
                 .date{
